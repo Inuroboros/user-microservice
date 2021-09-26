@@ -23,10 +23,10 @@ public class UserController {
     @GetMapping("/{id}")
     public Optional<User> findUserById(@PathVariable Long id) {return userService.findUserById(id);}
 
-    @GetMapping("/names/{names}")
+    @GetMapping("/names/{name}")
     public Optional<User> findUserByName(@PathVariable String name){return userService.findUserByName(name);}
 
-    @GetMapping("/emails/{emails}")
+    @GetMapping("/emails/{email}")
     public Optional<User> findUserByEmail(@PathVariable String email){return userService.findUserByEmail(email);}
 
 }
